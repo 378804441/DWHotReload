@@ -50,7 +50,7 @@ clang -x objective-c -target ${linkTarget} -dynamiclib -isysroot ${linkIsysroot}
 
 # 真机动态库需要进行签名，否则无法dlopen加载成功
 if [ ${simulator} == "phone" ];then
-codesign -f -s "iPhone Developer: yongwen bai (QZ6P5FP5MA)" ${dylibFilePath}/dw${ctime}.dylib
+codesign -f -s "证书" ${dylibFilePath}/dw${ctime}.dylib
 fi
 
 # 将dylib上传给开启的app
@@ -65,7 +65,6 @@ fi
 
 dylibPath='/'${dylibFilePath}'/dw'${ctime}'.dylib'
 curl -H "Expect:" -F "file=@"${dylibPath} http://${ip}:8080/upload
-#curl -H "Expect:" -F "file=@"${dylibPath} http://192.168.3.145:8080/upload
 
 #上传成功后将dylib 删除掉
 rm -r ${dylibPath}
