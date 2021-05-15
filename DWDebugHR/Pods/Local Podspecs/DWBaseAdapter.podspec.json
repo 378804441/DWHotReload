@@ -1,0 +1,52 @@
+{
+  "name": "DWBaseAdapter",
+  "version": "1.3.0",
+  "summary": "A short description of DWBaseAdapter.",
+  "description": "进行tableView 拆分组件化轻量级框架",
+  "homepage": "https://github.com/378804441/DWAdapter",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "dingwei": "378804441@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/378804441/DWAdapter.git",
+    "tag": "1.3.0"
+  },
+  "source_files": "DWBaseAdapter/Classes/*.{h,m}",
+  "platforms": {
+    "ios": "8.0"
+  },
+  "subspecs": [
+    {
+      "name": "Category",
+      "source_files": "DWBaseAdapter/Classes/Category/*.{h,m}"
+    },
+    {
+      "name": "Handler",
+      "source_files": "DWBaseAdapter/Classes/Handler/*.{h,m}"
+    },
+    {
+      "name": "Config",
+      "source_files": "DWBaseAdapter/Classes/Config/*.{h,m}"
+    },
+    {
+      "name": "Diff",
+      "source_files": "DWBaseAdapter/Classes/Diff/*.{h,m}"
+    },
+    {
+      "name": "Model",
+      "source_files": "DWBaseAdapter/Classes/Model/*.{h,m}"
+    },
+    {
+      "name": "Protocol",
+      "source_files": "DWBaseAdapter/Classes/Protocol/*.{h,m}"
+    },
+    {
+      "name": "ThreadSafety",
+      "source_files": "DWBaseAdapter/Classes/ThreadSafety/*.{h,m}"
+    }
+  ]
+}

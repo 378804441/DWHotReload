@@ -1,0 +1,779 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35E0DB0C817263F83A07B3CE /* Pods_DWDebugHR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D74FC27D5BC75C47235A99BC /* Pods_DWDebugHR.framework */; };
+		5E1D12A2262FC91A00788106 /* DWUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1D12A1262FC91A00788106 /* DWUtil.m */; };
+		5E1D13972632B12700788106 /* UIView+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1D13942632B12700788106 /* UIView+Hook.m */; };
+		5E1D13982632B12700788106 /* UIViewController+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1D13952632B12700788106 /* UIViewController+Hook.m */; };
+		5E37F46F25A286D600C04A43 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E37F46725A286D600C04A43 /* index.html */; };
+		5E37F47325A286D600C04A43 /* DWServerUploaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E37F46C25A286D600C04A43 /* DWServerUploaderManager.m */; };
+		5E94B332259885310022471B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E94B331259885310022471B /* AppDelegate.m */; };
+		5E94B33B259885310022471B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E94B339259885310022471B /* Main.storyboard */; };
+		5E94B33D259885340022471B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E94B33C259885340022471B /* Assets.xcassets */; };
+		5E94B340259885340022471B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E94B33E259885340022471B /* LaunchScreen.storyboard */; };
+		5E94B343259885340022471B /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5E94B342259885340022471B /* main.mm */; };
+		5E94B34D259885340022471B /* DWDebugHRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E94B34C259885340022471B /* DWDebugHRTests.m */; };
+		5E94B358259885340022471B /* DWDebugHRUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E94B357259885340022471B /* DWDebugHRUITests.m */; };
+		5EBD294B262E70CA008AE25D /* DWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBD294A262E70CA008AE25D /* DWViewController.m */; };
+		5EBD2954262E7F45008AE25D /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBD2952262E7F45008AE25D /* UIView+Extension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5E94B349259885340022471B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E94B325259885300022471B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E94B32C259885310022471B;
+			remoteInfo = DWDebugHR;
+		};
+		5E94B354259885340022471B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E94B325259885300022471B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E94B32C259885310022471B;
+			remoteInfo = DWDebugHR;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5CABBBB47CFA632159B6B431 /* Pods-DWDebugHR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DWDebugHR.debug.xcconfig"; path = "Target Support Files/Pods-DWDebugHR/Pods-DWDebugHR.debug.xcconfig"; sourceTree = "<group>"; };
+		5E1D12A0262FC91A00788106 /* DWUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWUtil.h; sourceTree = "<group>"; };
+		5E1D12A1262FC91A00788106 /* DWUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWUtil.m; sourceTree = "<group>"; };
+		5E1D13932632B12700788106 /* UIView+Hook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Hook.h"; sourceTree = "<group>"; };
+		5E1D13942632B12700788106 /* UIView+Hook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Hook.m"; sourceTree = "<group>"; };
+		5E1D13952632B12700788106 /* UIViewController+Hook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Hook.m"; sourceTree = "<group>"; };
+		5E1D13962632B12700788106 /* UIViewController+Hook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Hook.h"; sourceTree = "<group>"; };
+		5E37F46725A286D600C04A43 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		5E37F46925A286D600C04A43 /* DWServerUploaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWServerUploaderManager.h; sourceTree = "<group>"; };
+		5E37F46C25A286D600C04A43 /* DWServerUploaderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWServerUploaderManager.m; sourceTree = "<group>"; };
+		5E94B32D259885310022471B /* DWDebugHR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DWDebugHR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E94B330259885310022471B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5E94B331259885310022471B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5E94B33A259885310022471B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5E94B33C259885340022471B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E94B33F259885340022471B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5E94B341259885340022471B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E94B342259885340022471B /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		5E94B348259885340022471B /* DWDebugHRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DWDebugHRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E94B34C259885340022471B /* DWDebugHRTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWDebugHRTests.m; sourceTree = "<group>"; };
+		5E94B34E259885340022471B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E94B353259885340022471B /* DWDebugHRUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DWDebugHRUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E94B357259885340022471B /* DWDebugHRUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWDebugHRUITests.m; sourceTree = "<group>"; };
+		5E94B359259885340022471B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EBD2949262E70CA008AE25D /* DWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWViewController.h; sourceTree = "<group>"; };
+		5EBD294A262E70CA008AE25D /* DWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWViewController.m; sourceTree = "<group>"; };
+		5EBD2952262E7F45008AE25D /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		5EBD2953262E7F45008AE25D /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		5EBD2981262F99B1008AE25D /* BundleSweeper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BundleSweeper.h; sourceTree = "<group>"; };
+		5EBD2982262F99B1008AE25D /* MachOInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MachOInfo.h; sourceTree = "<group>"; };
+		5EBD2983262F99B1008AE25D /* BundleInjection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BundleInjection.h; sourceTree = "<group>"; };
+		5EBD2984262F99B1008AE25D /* IvarAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IvarAccess.h; sourceTree = "<group>"; };
+		5EBD2985262F99B1008AE25D /* BundleInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BundleInterface.h; sourceTree = "<group>"; };
+		C31BA3015B3965E91AE6ADB0 /* Pods-DWDebugHR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DWDebugHR.release.xcconfig"; path = "Target Support Files/Pods-DWDebugHR/Pods-DWDebugHR.release.xcconfig"; sourceTree = "<group>"; };
+		D74FC27D5BC75C47235A99BC /* Pods_DWDebugHR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DWDebugHR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E94B32A259885310022471B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35E0DB0C817263F83A07B3CE /* Pods_DWDebugHR.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E94B345259885340022471B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E94B350259885340022471B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E37F46625A286D600C04A43 /* DWHotReload */ = {
+			isa = PBXGroup;
+			children = (
+				5E37F46725A286D600C04A43 /* index.html */,
+				5E37F46925A286D600C04A43 /* DWServerUploaderManager.h */,
+				5E37F46C25A286D600C04A43 /* DWServerUploaderManager.m */,
+			);
+			path = DWHotReload;
+			sourceTree = "<group>";
+		};
+		5E94B324259885300022471B = {
+			isa = PBXGroup;
+			children = (
+				5E94B32F259885310022471B /* DWDebugHR */,
+				5E94B34B259885340022471B /* DWDebugHRTests */,
+				5E94B356259885340022471B /* DWDebugHRUITests */,
+				5E94B32E259885310022471B /* Products */,
+				716AD03FFD1289F84E7BCE03 /* Pods */,
+				8A8C1827E5F8D6741C94CB40 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5E94B32E259885310022471B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E94B32D259885310022471B /* DWDebugHR.app */,
+				5E94B348259885340022471B /* DWDebugHRTests.xctest */,
+				5E94B353259885340022471B /* DWDebugHRUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E94B32F259885310022471B /* DWDebugHR */ = {
+			isa = PBXGroup;
+			children = (
+				5EBD2992262F9C14008AE25D /* Demo */,
+				5EBD2945262E68A1008AE25D /* Support */,
+				5EBD2980262F99B1008AE25D /* ClassSwizzle */,
+				5E37F46625A286D600C04A43 /* DWHotReload */,
+			);
+			path = DWDebugHR;
+			sourceTree = "<group>";
+		};
+		5E94B34B259885340022471B /* DWDebugHRTests */ = {
+			isa = PBXGroup;
+			children = (
+				5E94B34C259885340022471B /* DWDebugHRTests.m */,
+				5E94B34E259885340022471B /* Info.plist */,
+			);
+			path = DWDebugHRTests;
+			sourceTree = "<group>";
+		};
+		5E94B356259885340022471B /* DWDebugHRUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5E94B357259885340022471B /* DWDebugHRUITests.m */,
+				5E94B359259885340022471B /* Info.plist */,
+			);
+			path = DWDebugHRUITests;
+			sourceTree = "<group>";
+		};
+		5EBD2945262E68A1008AE25D /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				5E94B330259885310022471B /* AppDelegate.h */,
+				5E94B331259885310022471B /* AppDelegate.m */,
+				5E94B339259885310022471B /* Main.storyboard */,
+				5E94B33C259885340022471B /* Assets.xcassets */,
+				5E94B33E259885340022471B /* LaunchScreen.storyboard */,
+				5E94B341259885340022471B /* Info.plist */,
+				5E94B342259885340022471B /* main.mm */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		5EBD2980262F99B1008AE25D /* ClassSwizzle */ = {
+			isa = PBXGroup;
+			children = (
+				5EBD2981262F99B1008AE25D /* BundleSweeper.h */,
+				5EBD2982262F99B1008AE25D /* MachOInfo.h */,
+				5EBD2983262F99B1008AE25D /* BundleInjection.h */,
+				5EBD2984262F99B1008AE25D /* IvarAccess.h */,
+				5EBD2985262F99B1008AE25D /* BundleInterface.h */,
+			);
+			path = ClassSwizzle;
+			sourceTree = "<group>";
+		};
+		5EBD2992262F9C14008AE25D /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				5EBD2996262F9D31008AE25D /* Category */,
+				5EBD2949262E70CA008AE25D /* DWViewController.h */,
+				5EBD294A262E70CA008AE25D /* DWViewController.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		5EBD2996262F9D31008AE25D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				5E1D13932632B12700788106 /* UIView+Hook.h */,
+				5E1D13942632B12700788106 /* UIView+Hook.m */,
+				5E1D13962632B12700788106 /* UIViewController+Hook.h */,
+				5E1D13952632B12700788106 /* UIViewController+Hook.m */,
+				5E1D12A0262FC91A00788106 /* DWUtil.h */,
+				5E1D12A1262FC91A00788106 /* DWUtil.m */,
+				5EBD2953262E7F45008AE25D /* UIView+Extension.h */,
+				5EBD2952262E7F45008AE25D /* UIView+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		716AD03FFD1289F84E7BCE03 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5CABBBB47CFA632159B6B431 /* Pods-DWDebugHR.debug.xcconfig */,
+				C31BA3015B3965E91AE6ADB0 /* Pods-DWDebugHR.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8A8C1827E5F8D6741C94CB40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D74FC27D5BC75C47235A99BC /* Pods_DWDebugHR.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E94B32C259885310022471B /* DWDebugHR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E94B35C259885340022471B /* Build configuration list for PBXNativeTarget "DWDebugHR" */;
+			buildPhases = (
+				93005424401E5E48C9468041 /* [CP] Check Pods Manifest.lock */,
+				5E94B329259885310022471B /* Sources */,
+				5E94B32A259885310022471B /* Frameworks */,
+				5E94B32B259885310022471B /* Resources */,
+				427E5D859A32A7F29B16DB7E /* [CP] Embed Pods Frameworks */,
+				5E17881D25AFDDCA000F5FFA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DWDebugHR;
+			productName = DWDebugHR;
+			productReference = 5E94B32D259885310022471B /* DWDebugHR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5E94B347259885340022471B /* DWDebugHRTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E94B35F259885340022471B /* Build configuration list for PBXNativeTarget "DWDebugHRTests" */;
+			buildPhases = (
+				5E94B344259885340022471B /* Sources */,
+				5E94B345259885340022471B /* Frameworks */,
+				5E94B346259885340022471B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E94B34A259885340022471B /* PBXTargetDependency */,
+			);
+			name = DWDebugHRTests;
+			productName = DWDebugHRTests;
+			productReference = 5E94B348259885340022471B /* DWDebugHRTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5E94B352259885340022471B /* DWDebugHRUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E94B362259885340022471B /* Build configuration list for PBXNativeTarget "DWDebugHRUITests" */;
+			buildPhases = (
+				5E94B34F259885340022471B /* Sources */,
+				5E94B350259885340022471B /* Frameworks */,
+				5E94B351259885340022471B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E94B355259885340022471B /* PBXTargetDependency */,
+			);
+			name = DWDebugHRUITests;
+			productName = DWDebugHRUITests;
+			productReference = 5E94B353259885340022471B /* DWDebugHRUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E94B325259885300022471B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					5E94B32C259885310022471B = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					5E94B347259885340022471B = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 5E94B32C259885310022471B;
+					};
+					5E94B352259885340022471B = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 5E94B32C259885310022471B;
+					};
+				};
+			};
+			buildConfigurationList = 5E94B328259885300022471B /* Build configuration list for PBXProject "DWDebugHR" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5E94B324259885300022471B;
+			productRefGroup = 5E94B32E259885310022471B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E94B32C259885310022471B /* DWDebugHR */,
+				5E94B347259885340022471B /* DWDebugHRTests */,
+				5E94B352259885340022471B /* DWDebugHRUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E94B32B259885310022471B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E94B340259885340022471B /* LaunchScreen.storyboard in Resources */,
+				5E37F46F25A286D600C04A43 /* index.html in Resources */,
+				5E94B33D259885340022471B /* Assets.xcassets in Resources */,
+				5E94B33B259885310022471B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E94B346259885340022471B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E94B351259885340022471B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		427E5D859A32A7F29B16DB7E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DWDebugHR/Pods-DWDebugHR-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DWDebugHR/Pods-DWDebugHR-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DWDebugHR/Pods-DWDebugHR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E17881D25AFDDCA000F5FFA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#cd ${BUILT_PRODUCTS_DIR}\n#cd ${FULL_PRODUCT_NAME}\n#/usr/bin/codesign --force --sign ${EXPANDED_CODE_SIGN_IDENTITY} --timestamp=none test2.dylib\n#/usr/bin/codesign --force --sign ${EXPANDED_CODE_SIGN_IDENTITY} --timestamp=none test.dylib\n";
+		};
+		93005424401E5E48C9468041 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DWDebugHR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E94B329259885310022471B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E1D13982632B12700788106 /* UIViewController+Hook.m in Sources */,
+				5E1D12A2262FC91A00788106 /* DWUtil.m in Sources */,
+				5EBD2954262E7F45008AE25D /* UIView+Extension.m in Sources */,
+				5E94B332259885310022471B /* AppDelegate.m in Sources */,
+				5E37F47325A286D600C04A43 /* DWServerUploaderManager.m in Sources */,
+				5E1D13972632B12700788106 /* UIView+Hook.m in Sources */,
+				5EBD294B262E70CA008AE25D /* DWViewController.m in Sources */,
+				5E94B343259885340022471B /* main.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E94B344259885340022471B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E94B34D259885340022471B /* DWDebugHRTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E94B34F259885340022471B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E94B358259885340022471B /* DWDebugHRUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5E94B34A259885340022471B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E94B32C259885310022471B /* DWDebugHR */;
+			targetProxy = 5E94B349259885340022471B /* PBXContainerItemProxy */;
+		};
+		5E94B355259885340022471B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E94B32C259885310022471B /* DWDebugHR */;
+			targetProxy = 5E94B354259885340022471B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5E94B339259885310022471B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E94B33A259885310022471B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5E94B33E259885340022471B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E94B33F259885340022471B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5E94B35A259885340022471B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5E94B35B259885340022471B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E94B35D259885340022471B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CABBBB47CFA632159B6B431 /* Pods-DWDebugHR.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U4Z5L86JYZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DWDebugHR",
+				);
+				INFOPLIST_FILE = DWDebugHR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DWDebugHR",
+					"$(PROJECT_DIR)/DWDebugHR/Demo",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ase.tvnara;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5E94B35E259885340022471B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C31BA3015B3965E91AE6ADB0 /* Pods-DWDebugHR.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U4Z5L86JYZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DWDebugHR",
+				);
+				INFOPLIST_FILE = DWDebugHR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DWDebugHR",
+					"$(PROJECT_DIR)/DWDebugHR/Demo",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ase.tvnara;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5E94B360259885340022471B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U4Z5L86JYZ;
+				INFOPLIST_FILE = DWDebugHRTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ding.Tencen.DWDebugHRTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DWDebugHR.app/DWDebugHR";
+			};
+			name = Debug;
+		};
+		5E94B361259885340022471B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U4Z5L86JYZ;
+				INFOPLIST_FILE = DWDebugHRTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ding.Tencen.DWDebugHRTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DWDebugHR.app/DWDebugHR";
+			};
+			name = Release;
+		};
+		5E94B363259885340022471B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U4Z5L86JYZ;
+				INFOPLIST_FILE = DWDebugHRUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ding.Tencen.DWDebugHRUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DWDebugHR;
+			};
+			name = Debug;
+		};
+		5E94B364259885340022471B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U4Z5L86JYZ;
+				INFOPLIST_FILE = DWDebugHRUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ding.Tencen.DWDebugHRUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DWDebugHR;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E94B328259885300022471B /* Build configuration list for PBXProject "DWDebugHR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E94B35A259885340022471B /* Debug */,
+				5E94B35B259885340022471B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E94B35C259885340022471B /* Build configuration list for PBXNativeTarget "DWDebugHR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E94B35D259885340022471B /* Debug */,
+				5E94B35E259885340022471B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E94B35F259885340022471B /* Build configuration list for PBXNativeTarget "DWDebugHRTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E94B360259885340022471B /* Debug */,
+				5E94B361259885340022471B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E94B362259885340022471B /* Build configuration list for PBXNativeTarget "DWDebugHRUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E94B363259885340022471B /* Debug */,
+				5E94B364259885340022471B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E94B325259885300022471B /* Project object */;
+}
